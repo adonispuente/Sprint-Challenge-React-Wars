@@ -11,17 +11,28 @@ const Container = styled.div`
   margin: 10 auto;
   height: 300px;
   border: 5px solid white;
+  border-radius:20px;
   width 40%;
+`;
+
+const Perm = styled.h1`
+  font-family: "Permanent Marker", cursive;
+  text-decoration: underline;
+`;
+
+const Super = styled.h3`
+  font-family: "Supermercado One", cursive;
+  color: white;
 `;
 
 const Child = person => {
   return (
     <Container>
-      <h1>Name: {person.name}</h1>
-      <h3>Hair Color: {person.hair_color}</h3>
-      <h3>Eye Color: {person.eye_color}</h3>
-      <h3>Gender: {person.gender}</h3>
-      <h3>Height: {person.height} cm</h3>
+      <Perm>{person.name}</Perm>
+      <Super>Hair Color: {person.hair_color}</Super>
+      <Super>Eye Color: {person.eye_color}</Super>
+      <Super>Gender: {person.gender}</Super>
+      <Super>Height: {person.height} cm </Super>
     </Container>
   );
 };
